@@ -1,0 +1,92 @@
+/* base colors */
+.bg-light-brown {
+    background-color: #F6E1C8;
+}
+
+.bg-dark-brown {
+    background-color: #886551;
+}
+
+.text-dark-brown {
+    color: #886551;
+}
+
+
+/* element clipping paths */
+.clip-diagonal {
+    clip-path: polygon(
+        20px 0,
+        100% 0,       
+        100% calc(100% - 20px),
+        calc(100% - 20px) 100%,
+        0 100%,
+        0 20px
+    );
+}
+.clip-diagonal-large {
+        clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,                    
+        400px 100%,
+        0 calc(100% - 400px)
+    );  
+}
+
+
+/* scroll animation - inital state and viewport visiblity */
+.scroll-fade-up {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 1s ease-out;
+}
+
+.scroll-fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* custom element bounce */
+.animate-soft-bounce {
+    animation: soft-bounce 2s ease-in-out infinite;
+}
+
+/* element soft bounce */
+@keyframes soft-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+
+/* timetale tabs styling */
+.timetable-slot-d {
+    background-color: rgba(246, 225, 200, 1);
+    height: 8rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.25rem;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.080);
+}
+
+.timetable-slot-l {
+    background-color: rgb(255, 241, 224);
+    height: 8rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.25rem;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.080);
+}
+/* styling for empty/no lesson cels */
+.timetable-slot-fill {
+    background-color: rgb(255, 255, 255);
+    height: 8rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.25rem;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.080);
+}

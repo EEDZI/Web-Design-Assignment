@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embo Martial Arts | EMA</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../scripts.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body class="font-[Urbanist] antialiased bg-gradient-to-b from-[#F6E1C8] to-white min-h-screen flex items-center justify-center">
+
+    <button type="button" onclick="history.back()"
+            class="absolute top-6 left-6 bg-dark-brown text-white py-2 px-6 rounded-full hover:scale-105 transition-transform duration-300">
+        Back
+    </button>
+
+    <main class="w-full flex flex-col items-center">
+
+        <!-- login -->
+        <div id="loginForm" class="flex flex-col w-[360px] p-8 clip-diagonal bg-white shadow-lg transition-all duration-300">
+            <form class="space-y-8 text-dark-brown">
+                <h1 class="text-3xl font-semibold">Account Log-In</h1>
+
+                <div>
+                    <label class="block text-lg mb-2">Email Address</label>
+                    <input type="email" class="w-full p-4 rounded-md border border-bg-dark-brown focus:outline-none focus:ring-2 focus:ring-bg-dark-brown placeholder:text-dark-brown duration-300" placeholder="you@example.com">
+                </div>
+
+                <div>
+                    <label class="block text-lg mb-2">Password</label>
+                    <input type="password" class="w-full p-4 rounded-md border border-bg-dark-brown focus:outline-none focus:ring-2 focus:ring-bg-dark-brown duration-300">
+                </div>
+
+                <button type="submit" class="w-full bg-dark-brown text-white py-4 rounded-full text-xl cursor-pointer hover:scale-105 transition-transform duration-300">
+                    Submit
+                </button>
+
+                <button type="button" onclick="toggleSignup()" class="underline cursor-pointer font-semibold">
+                    Don't have an account? Sign up here!
+                </button>
+            </form>
+        </div>
+
+        <!-- signup -->
+        <div id="signupForm" class="hidden flex flex-col w-[360px] mt-12 p-8 clip-diagonal bg-white shadow-lg transition-all duration-300">
+            <form class="space-y-8 text-dark-brown">
+                <h1 class="text-3xl font-semibold">Create Account</h1>
+
+                <div>
+                    <label class="block text-lg mb-2">Name</label>
+                    <input type="text" class="w-full p-4 rounded-md border border-bg-dark-brown focus:outline-none focus:ring-2 focus:ring-bg-dark-brown placeholder:text-dark-brown duration-300" placeholder="Joe">
+                </div>
+
+                <div>
+                    <label class="block text-lg mb-2">Email Address</label>
+                    <input type="email" class="w-full p-4 rounded-md border border-bg-dark-brown focus:outline-none focus:ring-2 focus:ring-bg-dark-brown placeholder:text-dark-brown duration-300" placeholder="you@example.com">
+                </div>
+
+                <div>
+                    <label class="block text-lg mb-2">Password</label>
+                    <input type="password" class="w-full p-4 rounded-md border border-bg-dark-brown focus:outline-none focus:ring-2 focus:ring-bg-dark-brown duration-300">
+                </div>
+
+                <button type="submit" class="w-full bg-dark-brown text-white py-4 rounded-full text-xl cursor-pointer hover:scale-105 transition-transform duration-300">
+                    Create Account
+                </button>
+
+                <button type="button" onclick="toggleLogin()" class="underline cursor-pointer font-semibold">
+                    Already have an account? Log in
+                </button>
+            </form>
+        </div>
+
+    </main>
+</body>
+</html>

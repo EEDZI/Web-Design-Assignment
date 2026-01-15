@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- FEDRA MILP -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | EMA</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../scripts.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body class="font-[Urbanist]">
+    <!-- header -->
+    <header class=" px-2 py-1 hover:shadow-sm sticky top-0 z-50 bg-white duration-700">
+        <nav class="bg-white text-black flex justify-between items-center ">
+            
+            <!--company logo -->
+            <a href="../../index.html"><img src="../assets/company-icon-img.PNG" alt="Logo" class="h-22 ml-8"></a>
+            
+
+            <!-- hamburger icon -->
+             <div class="flex flex-row gap-12 mr-8 text-lg text-shadow-lg">
+                <a href="login.html" class="flex cursor-pointer font-semibold transition-all duration-300 justify-center items-center">
+                    <p>ACCOUNT</p>
+                </a> 
+
+                <button onclick="toggleSideNav()">
+                    <div class="flex flex-row gap-2 cursor-pointer p-3 duration-300">
+                        <p class="text-dark-brown font-semibold">MENU</p>
+                        <div class="flex flex-col gap-1.5 self-center">
+                            <div class="w-8 h-[2px] bg-dark-brown "></div>
+                            <div class="w-8 h-[2px] bg-dark-brown"></div>
+                        </div>
+                    </div>
+                </button> 
+             </div>
+        </nav>
+    </header>
+
+    <aside id="side-nav" class="fixed inset-0 bg-white/95 z-50 transform translate-x-full transition-transform duration-500 ease-in-out">
+
+        <div class="flex h-full items-center justify-center">
+            <div class="flex flex-col gap-10 text-4xl sm:text-6xl font-semliight text-[#886551] items-center">
+                <a href="services.html" class="cursor-pointer hover:text-black">Our Services</a>
+                <a href="membership.html" class="cursor-pointer hover:text-black ">Membership & Pricing</a>
+                <a href="timetable.html" class="cursor-pointer hover:text-black">Class Timetable</a>
+                <a href="about.html" class="cursor-pointer hover:text-black">Our Story & People</a>
+                <a href="contact.html" class="cursor-pointer hover:text-black">Contact Us</a>
+
+                <button onclick="toggleSideNav()" class="p-2 self-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                        class="size-20 mt-10 text-dark-brown cursor-pointer border-[2px] rounded-full p-2 hover:bg-[#f5e9e0]/50 transition-colors duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            
+        </div>
+    </aside>
+
+
+    <main>
+        <section class="relative h-[94.75vh] bg-cover bg-center bg-[url(../assets/wallpaper-2.jpg)]">
+            <div class="absolute inset-0 flex flex-col justify-center items-start text-white mx-6 md:mx-20">
+                <h1 class="text-7xl md:text-8xl font-medium mb-6">Our Services</h1>
+                <hr class="bg-white h-px w-40">
+            </div>
+            <!-- bounce scroll indicator -->
+            <div class="absolute left-1/2 bottom-12 /2 text-white flex flex-col items-center gap-2 animate-soft-bounce">
+                <p class="text-xl font-semibold">Scroll</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="w-12 h-12 border border-white p-2 rounded-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
+                </svg>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-b from-[#F6E1C8] to-white py-32 text-center">
+            <h1 class="text-7xl font-thin text-[#3A2A22]">What We Offer</h1>
+            <hr class="w-24 h-[2px] bg-dark-brown mx-auto my-6">
+            <p class="text-2xl text-[#5A4A42] max-w-3xl mx-auto">
+                Explore the classes and training options we offer for all ages and skill levels
+            </p>
+        </section>
+
+        <!-- services cards -->
+        <section class="py-32 bg-white">
+            <div class="max-w-[1700px] mx-auto">
+
+                <!-- 1st row -->
+                <div class="relative mb-32 scroll-fade-up">
+                    <!-- deco block -->
+                    <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 w-[99%] bg-dark-brown z-0"></div>
+
+                    <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-20">
+
+                        <div class="bg-white shadow-md overflow-hidden hover:scale-105 duration-300 transition-all">
+                            <img src="../assets/wallpaper-3.jpg" class="h-56 w-full object-cover ">
+                            <div class="p-6">
+                                <h3 class="text-3xl font-bold mb-2">Martial Arts Classes</h3>
+                                <hr class="w-16 h-[1px] bg-dark-brown mb-3">
+                                <p class="text-lg mb-2">Adults wanting structured training</p>
+                                <p class="text-lg mb-3">Technique, discipline, fitness</p>
+                                <a href="timetable.html" class="text-[#886551] font-light text-xl cursor-pointer group hover:underline">
+                                View Timetable 
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"
+                                        class="size-5 -rotate-90 inline-block group-hover:translate-x-1 duration-300 transition-all">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white shadow-md overflow-hidden hover:scale-105 duration-300 transition-all">
+                            <img src="../assets/wallpaper-3.jpg" class="h-56 w-full object-cover">
+                            <div class="p-6">
+                                <h3 class="text-3xl font-bold mb-2">Kids Martial Arts</h3>
+                                <hr class="w-16 h-[1px] bg-dark-brown mb-3">
+                                <p class="text-lg mb-2">Children aged 5-15</p>
+                                <p class="text-lg mb-3">Develops confidence, coordination, and respect</p>
+                                <a href="timetable.html" class="text-[#886551] text-xl cursor-pointer group hover:underline">
+                                    View Timetable
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"
+                                        class="size-5 -rotate-90 mb-[2px] inline-block group-hover:translate-x-1 duration-300 transition-all">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white shadow-md overflow-hidden hover:scale-105 duration-300 transition-all">
+                            <img src="../assets/wallpaper-3.jpg" class="h-56 w-full object-cover">
+                            <div class="p-6">
+                                <h3 class="text-3xl font-bold mb-2">Private Martial Arts Tuition</h3>
+                                <hr class="w-16 h-[1px] bg-dark-brown mb-3">
+                                <p class="text-lg mb-2">Individuals seeking personalised coaching</p>
+                                <p class="text-lg mb-3">Rapid skill improvement and tailored learning</p>
+                                <a href="timetable.html" class="text-[#886551] text-xl cursor-pointer group hover:underline">
+                                    View Timetable
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"
+                                        class="size-5 -rotate-90 inline-block group-hover:translate-x-1 duration-300 transition-all">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+
+            <!-- 2nd row -->
+            <div class="relative scroll-fade-up">
+                <!-- deco block -->
+                <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 w-[99%] bg-dark-brown z-0"></div>
+
+
+                <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-16">
+                    <!-- 3 cards -->
+                    <div class="bg-white shadow-md overflow-hidden hover:scale-105 duration-300 transition-all">
+                        <img src="../assets/wallpaper-3.jpg" class="h-56 w-full object-cover">
+                        <div class="p-6">
+                            <h3 class="text-3xl font-bold mb-2">Open Mat / Personal Practice</h3>
+                            <hr class="w-16 h-[1px] bg-dark-brown mb-3">
+                            <p class="text-lg mb-2">Students wanting extra training time</p>
+                            <p class="text-lg mb-3">Flexible practice space for drilling and self-paced learning</p>
+                            <a href="timetable.html" class="text-[#886551] text-xl cursor-pointer group hover:underline">
+                                View Timetable 
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"
+                                    class="size-5 -rotate-90 inline-block group-hover:translate-x-1 duration-300 transition-all">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-md overflow-hidden hover:scale-105 duration-300 transition-all">
+                        <img src="../assets/wallpaper-3.jpg" class="h-56 w-full object-cover">
+                        <div class="p-6">
+                            <h3 class="text-3xl font-bold mb-2">Muay Thai / Fitness & Conditioning</h3>
+                            <hr class="w-16 h-[1px] bg-dark-brown mb-3">
+                            <p class="text-lg mb-2">Anyone wanting high-intensity training</p>
+                            <p class="text-lg mb-3">Improves cardio, strength, and striking technique</p>
+                            <a href="timetable.html" class="text-[#886551] text-xl cursor-pointer group hover:underline">
+                                View Timetable
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    class="size-5 -rotate-90 mb-[2px] inline-block group-hover:translate-x-1 duration-300 transition-all">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white shadow-md overflow-hidden hover:scale-105 duration-300 transition-all">
+                        <img src="../assets/wallpaper-3.jpg" class="h-56 w-full object-cover">
+                        <div class="p-6">
+                            <h3 class="text-3xl font-bold mb-2">Self-Defence</h3>
+                            <hr class="w-16 h-[1px] bg-dark-brown mb-3">
+                            <p class="text-lg mb-2"> Beginners and non-fighters seeking practical safety skills</p>
+                            <p class="text-lg mb-3"> Real-world techniques that boost awareness and confidence</p>
+                            <a href="timetable.html" class="text-[#886551] text-xl cursor-pointer group hover:underline">
+                                View Timetable
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    class="size-5 -rotate-90 inline-block group-hover:translate-x-1 duration-300 transition-all">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- call to action -->
+        <section >
+            <div class="flex flex-col self-center items-center lg:my-30 lg:mx-40 md:my-20 md:mx-20 gap-10">
+                <h1 class="text-6xl font-semliight">Ready To Start Your Journey?</h1>
+                <p class="text-3xl font-light">Join our community today and transform your life, The first step is the hardest, but we make it easy</p>
+                <div class="flex flex-row gap-10">
+                    <a href=timetable.html class="px-20 py-5 mt-5 bg-dark-brown text-white rounded-full hover:bg-dark-brown/90 transition-colors duration-300 text-3xl font-regular lg:w-96">View Timetable</a>
+                    <a href="membership.html" class="px-20 py-5 mt-5 bg-dark-brown text-center text-white rounded-full hover:bg-dark-brown/90 transition-colors duration-300 text-3xl font-regular lg:w-96">See Pricing</a>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="bg-light-brown py-1 items-center justify-center flex flex-col">
+            <div class="flex flex-row gap-10 justify-center items-center py-16">
+                <div>
+                    <h1 class="text-5xl">Embo<br> Martial<br> Arts</h1>
+                </div>
+                <hr class="bg-black h-70 w-[1px]">
+                <div class="flex flex-col items-start">
+                    <h1 class="text-2xl text-[#886551] mb-2">Discover</h1>
+                    <ul>
+                        <a><li>History</li></a>
+                        <a><li>About Embo Martial Arts</li></a>
+                        <a><li>Legal</li></a>
+                        <a><li>Statistics</li></a>
+                    </ul>
+                </div>
+                <hr class="bg-black h-45 w-[1px]">
+                <div>
+                    <h1 class="text-2xl text-[#886551] mb-2">Contact</h1>
+                    <ul>
+                        <a><li>History</li></a>
+                        <a><li>About Embo Martial Arts</li></a>
+                        <a><li>Legal</li></a>
+                        <a><li>Statistics</li></a>
+                        <a><li>Youtube</li></a>
+                        <a><li>Instagram</li></a>
+                    </ul>
+                </div>
+                <hr class="bg-black h-45 w-[1px]">
+                <div>
+                    <h1 class="text-2xl text-[#886551] mb-2">Other Infomation</h1>
+                    <ul>
+                        <a><li>History</li></a>
+                        <a><li>About Embo Martial Arts</li></a>
+                        <a><li>Legal</li></a>
+                        <a><li>Statistics</li></a>
+                        <a><li>Social Networking</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-white w-full text-center py-4">
+                <p>Embo Martial Arts  2026 © - 24 Oxford Street, London, UK.<br> All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

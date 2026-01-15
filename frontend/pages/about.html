@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embo Martial Arts | EMA</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../scripts.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body class="font-[Urbanist] antialiased">
+    <!-- header -->
+    <header class=" px-2 py-1 hover:shadow-sm sticky top-0 z-50 bg-white duration-700">
+        <nav class="bg-white text-black flex justify-between items-center ">
+            
+            <!--company logo -->
+            <a href="../../index.html"><img src="../assets/company-icon-img.PNG" alt="Logo" class="h-22 ml-8"></a>
+            
+
+            <!-- hamburger icon -->
+             <div class="flex flex-row gap-12 mr-8 text-lg text-shadow-lg">
+                <a href="login.html" class="flex cursor-pointer font-semibold transition-all duration-300 justify-center items-center">
+                    <p>ACCOUNT</p>
+                </a> 
+
+                <button onclick="toggleSideNav()">
+                    <div class="flex flex-row gap-2 cursor-pointer p-3 duration-300">
+                        <p class="text-dark-brown font-semibold">MENU</p>
+                        <div class="flex flex-col gap-1.5 self-center">
+                            <div class="w-8 h-[2px] bg-dark-brown "></div>
+                            <div class="w-8 h-[2px] bg-dark-brown"></div>
+                        </div>
+                    </div>
+                </button> 
+             </div>
+        </nav>
+    </header>
+
+    <aside id="side-nav" class="fixed inset-0 bg-white/95 z-50 transform translate-x-full transition-transform duration-500 ease-in-out">
+
+        <div class="flex h-full items-center justify-center">
+            <div class="flex flex-col gap-10 text-4xl sm:text-6xl font-semliight text-[#886551] items-center">
+                <a href="services.html" class="cursor-pointer hover:text-black">Our Services</a>
+                <a href="membership.html" class="cursor-pointer hover:text-black ">Membership & Pricing</a>
+                <a href="timetable.html" class="cursor-pointer hover:text-black">Class Timetable</a>
+                <a href="about.html" class="cursor-pointer hover:text-black">Our Story & People</a>
+                <a href="contact.html" class="cursor-pointer hover:text-black">Contact Us</a>
+
+                <button onclick="toggleSideNav()" class="p-2 self-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                        class="size-20 mt-10 text-dark-brown cursor-pointer border-[2px] rounded-full p-2 hover:bg-[#f5e9e0]/50 transition-colors duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            
+        </div>
+    </aside>
+
+
+    <main>
+        <!-- heading -->
+        <section class="bg-gradient-to-b from-[#F6E1C8] to-white py-32 mb-20 text-center">
+            <h1 class="text-7xl font-thin">About Embo Martial Arts</h1>
+            <hr class="w-24 h-[2px] bg-dark-brown mx-auto my-6">
+            <p class="text-2xl max-w-3xl mx-auto">
+                Building confidence, discipline, and strength through traditional and modern martial arts.
+            </p>
+        </section>
+
+        <!-- about ema -->
+        <section class="max-w-[1400px] mx-auto px-6 bg-white">
+            <!-- content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                <div class="flex flex-col gap-6 text-lg leading-relaxed">
+                    <p>
+                        <span class="font-semibold text-dark-brown">Embo Martial Arts</span> 
+                        was founded with a simple task: to create a welcoming environment where students of all ages can 
+                        develop confidence, physical strength, and mental resilience.
+
+                    </p>
+                    <p>
+                        Our training blends traditional martial arts with modern coaching methods. Whether you're a complete beginner or an 
+                        experienced martial artist, our classes are designed to push your skills while remaining supportive and inclusive.
+                    </p>
+                    <p>
+                        At EMA, we go beyond traditional trainin,g by offering state-of-the-art fitness facilities to support strength, 
+                        conditioning, and recovery, helping members perform at their best both on and off the mat.
+                    </p>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute inset-0"></div>
+                    <img src="../assets/karate-side-image.jpg" alt="Training at Embo Martial Arts" class="relative clip-diagonal shadow-lg w-full object-cover">
+                </div>
+            </div>
+
+            <!-- company values -->
+            <div class="mt-40">
+                <h2 class="text-5xl font-light text-center mb-12">Our Core Values</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <div class="text-center p-6 clip-diagonal transition hover:bg-[#F6E1C8]">
+                        <h3 class="text-xl font-semibold text-dark-brown mb-2">Respect</h3>
+                        <p >
+                            For yourself, your instructors, and your fellow students.
+                        </p>
+                    </div>
+
+                    <div class="text-center p-6 clip-diagonal hover:bg-[#F6E1C8] transition">
+                        <h3 class="text-xl font-semibold text-dark-brown mb-2">Discipline</h3>
+                        <p>
+                            Building focus, consistency, and strong habits.
+                        </p>
+                    </div>
+
+                    <div class="text-center p-6 clip-diagonal hover:bg-[#F6E1C8] transition">
+                        <h3 class="text-xl font-semibold text-dark-brown mb-2">Confidence</h3>
+                        <p>
+                            Gaining belief in your abilities through progress.
+                        </p>
+                    </div>
+
+                    <div class="text-center p-6 clip-diagonal hover:bg-[#F6E1C8] transition">
+                        <h3 class="text-xl font-semibold text-dark-brown mb-2">Community</h3>
+                        <p>
+                            A supportive space where everyone belongs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- instructors -->
+        <section class="py-24">
+            <div class="max-w-full mx-auto">
+
+                <!-- header -->
+                <div class="text-center pb-20 bg-light-brown py-20">
+                    <h2 class="text-5xl font-thin ">Our Instructors</h2>
+                    <hr class="w-24 h-[2px] bg-dark-brown mx-auto my-6">
+                    <p class="text-lg  max-w-2xl mx-auto">
+                        Highly qualified professionals dedicated to excellence in martial arts and fitness.
+                    </p>
+                </div>
+
+<<<<<<< HEAD
+                <!-- instructors -->
+                <div class="flex flex-col gap-8 justify-center items-center">
+                    <!-- mauricio -->
+=======
+
+                <div class="flex flex-col gap-8 justify-center items-center">
+                    <!-- mauricio gomez -->
+>>>>>>> 8290479d06063a46590de6679604f62fb22a7850
+                    <div class="w-full bg-light-brown">
+                        <div class="max-w-[1400px] mx-auto px-6 py-10
+                                    flex flex-col md:flex-row gap-10
+                                    justify-center items-center">
+
+                            <div class="md:w-1/3">
+                                <h3 class="text-3xl font-semibold text-[#886551]">
+                                    Mauricio Gomez
+                                </h3>
+                                <p class="text-stone-500 mt-1 italic">
+                                    Gym Owner / Head Martial Arts Coach
+                                </p>
+                            </div>
+
+                            <div class="md:w-2/3 text-stone-700 text-lg leading-relaxed">
+                                <ul class="list-disc ml-5 space-y-1">
+                                    <li>4th Dan Blackbelt - Judo</li>
+                                    <li>3rd Dan Blackbelt - Jiu-Jitsu</li>
+                                    <li>1st Dan Blackbelt - Karate</li>
+                                    <li>Accredited Muay Thai Coach</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <!-- sarah -->
+=======
+                    <!-- sarah nova -->
+>>>>>>> 8290479d06063a46590de6679604f62fb22a7850
+                    <div class="w-full bg-white">
+                        <div class="max-w-[1400px] mx-auto px-6 py-10
+                                    min-h-[220px] md:min-h-[200px]
+                                    flex flex-col md:flex-row gap-10
+                                    justify-center items-center">
+
+                            <div class="md:w-1/3">
+                                <h3 class="text-3xl font-semibold text-[#886551]">
+                                    Sarah Nova
+                                </h3>
+                                <p class="text-stone-500 mt-1 italic">
+                                    Assistant Martial Arts Coach
+                                </p>
+                            </div>
+
+                            <div class="md:w-2/3 text-stone-700 text-lg">
+                                <ul class="list-disc ml-5">
+                                    <li>5th Dan Blackbelt - Karate</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <!-- guy -->
+=======
+                    <!-- guy victory -->
+>>>>>>> 8290479d06063a46590de6679604f62fb22a7850
+                    <div class="w-full bg-light-brown">
+                        <div class="max-w-[1400px] mx-auto px-6 py-10
+                                    min-h-[220px] md:min-h-[200px]
+                                    flex flex-col md:flex-row gap-10
+                                    justify-center items-center">
+
+                            <div class="md:w-1/3">
+                                <h3 class="text-3xl font-semibold text-[#886551]">
+                                    Guy Victory
+                                </h3>
+                                <p class="text-stone-500 mt-1 italic">
+                                    Assistant Martial Arts Coach
+                                </p>
+                            </div>
+
+                            <div class="md:w-2/3 text-stone-700 text-lg leading-relaxed">
+                                <ul class="list-disc ml-5 space-y-1">
+                                    <li>2nd Dan Blackbelt – Jiu-Jitsu</li>
+                                    <li>1st Dan Blackbelt – Judo</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <!-- morris -->
+=======
+                    <!-- morris davis -->
+>>>>>>> 8290479d06063a46590de6679604f62fb22a7850
+                    <div class="w-full bg-white">
+                        <div class="max-w-[1400px] mx-auto px-6 py-10
+                                    min-h-[220px] md:min-h-[200px]
+                                    flex flex-col md:flex-row gap-10
+                                    justify-center items-center">
+
+                            <div class="md:w-1/3">
+                                <h3 class="text-3xl font-semibold text-[#886551]">
+                                    Morris Davis
+                                </h3>
+                                <p class="text-stone-500 mt-1 italic">
+                                    Assistant Martial Arts Coach
+                                </p>
+                            </div>
+
+                            <div class="md:w-2/3 text-stone-700 text-lg leading-relaxed">
+                                <ul class="list-disc ml-5 space-y-1">
+                                    <li>Accredited Muay Thai Coach</li>
+                                    <li>3rd Dan Blackbelt – Karate</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+<<<<<<< HEAD
+                    <!-- traci -->
+=======
+                    <!-- traci santiago -->
+>>>>>>> 8290479d06063a46590de6679604f62fb22a7850
+                    <div class="w-full bg-light-brown">
+                        <div class="max-w-[1400px] mx-auto px-6 py-10
+                                    min-h-[220px] md:min-h-[200px]
+                                    flex flex-col md:flex-row gap-10
+                                    justify-center items-center">
+
+                            <div class="md:w-1/3">
+                                <h3 class="text-3xl font-semibold text-[#886551]">
+                                    Traci Santiago
+                                </h3>
+                                <p class="text-stone-500 mt-1 italic">
+                                    Fitness Coach
+                                </p>
+                            </div>
+
+                            <div class="md:w-2/3 text-stone-700 text-lg leading-relaxed">
+                                <ul class="list-disc ml-5 space-y-1">
+                                    <li>BSc in Sports Science</li>
+                                    <li>Qualified in Health & Nutrition</li>
+                                    <li>Specialises in strength & conditioning for combat athletes</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- harpreet kaur -->
+                    <div class="w-full bg-white">
+                        <div class="max-w-[1400px] mx-auto px-6 py-10
+                                    min-h-[220px] md:min-h-[200px]
+                                    flex flex-col md:flex-row gap-10
+                                    justify-center items-center">
+
+                            <div class="md:w-1/3">
+                                <h3 class="text-3xl font-semibold text-[#886551]">
+                                    Harpreet Kaur
+                                </h3>
+                                <p class="text-stone-500 mt-1 italic">
+                                    Fitness Coach
+                                </p>
+                            </div>
+
+                            <div class="md:w-2/3 text-stone-700 text-lg leading-relaxed">
+                                <ul class="list-disc ml-5 space-y-1">
+                                    <li>BSc in Physiotherapy</li>
+                                    <li>MSc in Sports Science</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light-brown py-1 items-center justify-center flex flex-col">
+        <div class="flex flex-row gap-10 justify-center items-center py-16">
+            <div>
+                <h1 class="text-5xl">Embo<br> Martial<br> Arts</h1>
+            </div>
+            <hr class="bg-black h-70 w-[1px]">
+            <div class="flex flex-col items-start">
+                <h1 class="text-2xl text-[#886551] mb-2">Discover</h1>
+                <ul>
+                    <a><li>History</li></a>
+                    <a><li>About Embo Martial Arts</li></a>
+                    <a><li>Legal</li></a>
+                    <a><li>Statistics</li></a>
+                </ul>
+            </div>
+            <hr class="bg-black h-45 w-[1px]">
+            <div>
+                <h1 class="text-2xl text-[#886551] mb-2">Contact</h1>
+                <ul>
+                    <a><li>History</li></a>
+                    <a><li>About Embo Martial Arts</li></a>
+                    <a><li>Legal</li></a>
+                    <a><li>Statistics</li></a>
+                    <a><li>Youtube</li></a>
+                    <a><li>Instagram</li></a>
+                </ul>
+            </div>
+            <hr class="bg-black h-45 w-[1px]">
+            <div>
+                <h1 class="text-2xl text-[#886551] mb-2">Other Infomation</h1>
+                <ul>
+                    <a><li>History</li></a>
+                    <a><li>About Embo Martial Arts</li></a>
+                    <a><li>Legal</li></a>
+                    <a><li>Statistics</li></a>
+                    <a><li>Social Networking</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-white w-full text-center py-4">
+            <p>Embo Martial Arts  2026 © - 24 Oxford Street, London, UK.<br> All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership | EMA</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../scripts.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body class="font-[Urbanist] antialiased">
+    <!-- header -->
+    <header class=" px-2 py-1 hover:shadow-sm sticky top-0 z-50 bg-white duration-700">
+        <nav class="bg-white text-black flex justify-between items-center ">
+            
+            <!--company logo -->
+            <a href="../../index.html"><img src="../assets/company-icon-img.PNG" alt="Logo" class="h-22 ml-8"></a>
+            
+
+            <!-- hamburger icon -->
+             <div class="flex flex-row gap-12 mr-8 text-lg text-shadow-lg">
+                <a href="login.html" class="flex cursor-pointer font-semibold transition-all duration-300 justify-center items-center">
+                    <p>ACCOUNT</p>
+                </a> 
+
+                <button onclick="toggleSideNav()">
+                    <div class="flex flex-row gap-2 cursor-pointer p-3 duration-300">
+                        <p class="text-dark-brown font-semibold">MENU</p>
+                        <div class="flex flex-col gap-1.5 self-center">
+                            <div class="w-8 h-[2px] bg-dark-brown "></div>
+                            <div class="w-8 h-[2px] bg-dark-brown"></div>
+                        </div>
+                    </div>
+                </button> 
+             </div>
+        </nav>
+    </header>
+
+    <aside id="side-nav" class="fixed inset-0 bg-white/95 z-50 transform translate-x-full transition-transform duration-500 ease-in-out">
+
+        <div class="flex h-full items-center justify-center">
+            <div class="flex flex-col gap-10 text-4xl sm:text-6xl font-semliight text-[#886551] items-center">
+                <a href="services.html" class="cursor-pointer hover:text-black">Our Services</a>
+                <a href="membership.html" class="cursor-pointer hover:text-black ">Membership & Pricing</a>
+                <a href="timetable.html" class="cursor-pointer hover:text-black">Class Timetable</a>
+                <a href="about.html" class="cursor-pointer hover:text-black">Our Story & People</a>
+                <a href="contact.html" class="cursor-pointer hover:text-black">Contact Us</a>
+
+                <button onclick="toggleSideNav()" class="p-2 self-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                        class="size-20 mt-10 text-dark-brown cursor-pointer border-[2px] rounded-full p-2 hover:bg-[#f5e9e0]/50 transition-colors duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            
+        </div>
+    </aside>
+
+
+
+    <main>
+        <section class="bg-gradient-to-b from-[#F6E1C8] to-white flex flex-col md:flex-row max-w-[90%] mx-auto items-stretch rounded-b-3xl">
+        <div class="w-full md:w-2/5 flex flex-col justify-center text-center px-12">
+            <h1 class="text-7xl font-thin text-[#3A2A22]"> Memberships & Pricing</h1>
+            <hr class="w-24 h-[2px] bg-dark-brown mx-auto my-6 border-0">
+            <p class="text-2xl text-[#5A4A42] max-w-3xl mx-auto">
+                Flexible membership plans designed for beginners, advanced athletes, and families.
+            </p>
+        </div>
+        <img src="../assets/Karate image.webp" alt="Martial Arts Training" class="w-full md:w-3/5 object-cover clip-diagonal-large rounded-b-3xl">
+    </section>
+
+        
+        <section class="bg-white py-32">
+            <div class="max-w-[1600px] mx-auto px-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12">
+
+                <!-- basic card-->
+                <!--  icons - https://www.piliapp.com/symbol/bullet-point/-->
+                <div class="bg-light-brown p-10 h-full clip-diagonal flex flex-col hover:scale-110 transition-all duration-300">
+                    <h2 class="text-4xl font-medium mb-4">Basic</h2>
+                    <p class="text-5xl font-semibold mb-6">£25<span class="text-xl font-light">/month</span></p>
+                    <ul class="space-y-4 text-xl text-[#3A2A22] flex-grow">
+                        <li>1 martial art</li>
+                        <li>2 sessions per week</li>
+                        <li>Gym access during class times</li>
+                    </ul>
+                    <button class="mt-10 bg-dark-brown text-white py-3 rounded-full text-xl cursor-pointer hover:bg-dark-brown/90 transition">
+                        Join Now
+                    </button>
+                </div>
+
+                <!-- intermediate  card -->
+                <div class="bg-light-brown p-10 clip-diagonal flex flex-col hover:scale-110 transition-all duration-300">
+                    <h2 class="text-4xl font-medium mb-4">Intermediate</h2>
+                    <p class="text-5xl font-semibold mb-6">£35<span class="text-xl font-light">/month</span></p>
+                    <ul class="space-y-4 text-xl flex-grow">
+                        <li>1 martial art</li>
+                        <li>3 sessions per week</li>
+                        <li>Open mat access</li>
+                    </ul>
+                    <button class="mt-10 bg-dark-brown text-white py-3 rounded-full text-xl cursor-pointer hover:bg-dark-brown/90 transition">
+                        Join Now
+                    </button>
+                </div>
+
+                <!-- advanced card -->
+                <div class="bg-light-brown p-10 clip-diagonal flex flex-col hover:scale-110 transition-all duration-300">
+                    <h2 class="text-4xl font-medium mb-4">Advanced</h2>
+                    <p class="text-5xl font-semibold mb-6">£45<span class="text-xl font-light">/month</span></p>
+                    <ul class="space-y-4 text-xl flex-grow">
+                        <li>Any 2 martial arts</li>
+                        <li>5 sessions per week</li>
+                        <li>Open mat included</li>
+                    </ul>
+                    <button class="mt-10 bg-dark-brown text-white py-3 rounded-full text-xl cursor-pointer hover:bg-dark-brown/90 transition">
+                        Join Now
+                    </button>
+                </div>
+
+                <!-- elite card -->
+                <div class="bg-dark-brown text-white p-10 clip-diagonal flex flex-col scale-105 hover:scale-110 hover:transition-all duration-300">
+                    <h2 class="text-4xl font-medium mb-4">Elite</h2>
+                    <p class="text-5xl font-semibold mb-6">£60<span class="text-xl font-light">/month</span></p>
+                    <ul class="space-y-4 text-xl flex-grow">
+                        <li>Unlimited classes</li>
+                        <li>All martial arts</li>
+                        <li>Priority booking</li>
+                    </ul>
+                    <button class="mt-10 bg-white text-[#886551] py-3 rounded-full text-xl cursor-pointer hover:scale-105 transition">
+                        Go Elite
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white mb-32">
+            <div class="max-w-[1200px] mx-auto px-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-light-brown p-10 clip-diagonal flex flex-col hover:scale-105 transition-all duration-300">
+                    <h2 class="text-4xl font-medium mb-4">Junior Tutition</h2>
+                    <p class="text-5xl font-semibold mb-6">£60<span class="text-xl font-light">/month</span></p>
+                    <p class="text-xl">Access to all kids-only martial arts sessions.</p>
+                    <button class="mt-10 bg-dark-brown text-white py-3 rounded-full text-xl cursor-pointer hover:bg-dark-brown/90 transition">
+                        Join Now
+                    </button>
+                </div>
+
+                <div class="bg-light-brown p-10 clip-diagonal flex flex-col hover:scale-105 transition-all duration-300">
+                    <h2 class="text-4xl font-medium mb-4">Private Tuition</h2>
+                    <p class="text-5xl font-semibold mb-6">£15<span class="text-xl">/hour</span></p>
+                    <p class="text-xl">One-to-one coaching tailored to your goals.</p>
+                    <button class="mt-10 bg-dark-brown text-white py-3 rounded-full text-xl cursor-pointer hover:bg-dark-brown/90 transition">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-dark-brown py-20">
+            <div class="max-w-7xl mx-auto text-white text-xl flex justify-center items-center gap-12 relative">
+
+                <span>Beginner Friendly</span>
+                <span class="w-2 h-2 rounded-full bg-white"></span>
+
+                <span>Flexible Scheduling</span>
+                <span class="w-2 h-2 rounded-full bg-white"></span>
+
+                <span>Expert Coaches</span>
+                <span class="w-2 h-2 rounded-full bg-white"></span>
+
+                <span>No Long Contracts</span>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light-brown py-1 items-center justify-center flex flex-col">
+        <div class="flex flex-row gap-10 justify-center items-center py-16">
+            <div>
+                <h1 class="text-5xl">Embo<br> Martial<br> Arts</h1>
+            </div>
+            <hr class="bg-black h-70 w-[1px]">
+            <div class="flex flex-col items-start">
+                <h1 class="text-2xl text-[#886551] mb-2">Discover</h1>
+                <ul>
+                    <a><li>History</li></a>
+                    <a><li>About Embo Martial Arts</li></a>
+                    <a><li>Legal</li></a>
+                    <a><li>Statistics</li></a>
+                </ul>
+            </div>
+            <hr class="bg-black h-45 w-[1px]">
+            <div>
+                <h1 class="text-2xl text-[#886551] mb-2">Contact</h1>
+                <ul>
+                    <a><li>History</li></a>
+                    <a><li>About Embo Martial Arts</li></a>
+                    <a><li>Legal</li></a>
+                    <a><li>Statistics</li></a>
+                    <a><li>Youtube</li></a>
+                    <a><li>Instagram</li></a>
+                </ul>
+            </div>
+            <hr class="bg-black h-45 w-[1px]">
+            <div>
+                <h1 class="text-2xl text-[#886551] mb-2">Other Infomation</h1>
+                <ul>
+                    <a><li>History</li></a>
+                    <a><li>About Embo Martial Arts</li></a>
+                    <a><li>Legal</li></a>
+                    <a><li>Statistics</li></a>
+                    <a><li>Social Networking</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-white w-full text-center py-4">
+            <p>Embo Martial Arts  2026 © - 24 Oxford Street, London, UK.<br> All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<!--  icons - https://www.piliapp.com/symbol/bullet-point/(no longer used in final design - used tailwind heroicons)-->
