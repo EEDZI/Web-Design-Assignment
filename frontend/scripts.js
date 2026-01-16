@@ -1,11 +1,10 @@
-// hamburger menu toggle
+//hamburger menu toggle
 function toggleSideNav() {
     const sideNav = document.getElementById("side-nav");
     sideNav.classList.toggle("translate-x-full");
-
 }
 
-// close side nav on escape key 
+//close side nav on escape key 
 document.addEventListener("keydown", e => {
     if (e.key === "Escape") toggleSideNav();
 });
@@ -22,13 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         },
         {
-            threshold: 0.10 // trigger % value
+            threshold: 0.10 //trigger % value
         }
     );
     element.forEach(el => observer.observe(el));
 });
 
-//
+//switch between different login forms
 function toggleSignup() {
     document.getElementById("loginForm").classList.add("hidden");
     document.getElementById("signupForm").classList.remove("hidden");
@@ -40,18 +39,16 @@ function toggleLogin() {
 }
 
 
-
-
 const mainHeader = document.getElementById("mainHeader");
 const overlayHeader = document.getElementById("overlayHeader");
 
 function handleScroll() {
     if (window.scrollY === 0) {
-        // At top
+        //top
         mainHeader.classList.add("-translate-y-full", "opacity-0");
         overlayHeader.classList.remove("opacity-0");
     } else {
-        // Scrolled
+        //scrolled
         mainHeader.classList.remove("-translate-y-full", "opacity-0");
         overlayHeader.classList.add("opacity-0");
     }
